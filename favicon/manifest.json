@@ -3,6 +3,7 @@
   "name": "Heri Setiawan",
   "short_name": "Heriswn",
   "start_url": "https://herisetiawan.vercel.app/",
+  "scope": "/app/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "black",
