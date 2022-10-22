@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Heriswn",
+  "name": "Heri Setiawan",
   "short_name": "Heriswn",
   "start_url": "https://herisetiawan.vercel.app/",
   "display": "standalone",
