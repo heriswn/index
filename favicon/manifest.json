@@ -5,7 +5,7 @@
   "start_url": "https://herisetiawan.vercel.app/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "theme_color": "dark",
+  "theme_color": "black",
   "background_color": "#111",
   "description": "A personal web app.",
   "icons": [{
