@@ -2,8 +2,10 @@
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
   "name": "Heriswn",
   "short_name": "Heriswn",
-  "start_url": ".",
+  "start_url": "https://herisetiawan.vercel.app/",
   "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "dark",
   "background_color": "#111",
   "description": "A personal web app.",
   "icons": [{
