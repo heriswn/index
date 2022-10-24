@@ -62,12 +62,22 @@
         border-radius: 0;
       }
     }
+
+    .screenResponsive {
+      width: 500px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .screenResponsive {
+        width: 400px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <center>
-    <div style='width: 400px; margin-top: 25px; font-family:Arial; font-size: 13px;'>
+    <div class="screenResponsive" style='margin-top: 25px; font-family:Arial; font-size: 13px;'>
       <img src="img/heriswn.jpg" alt="profile" height="100" width="100" style="float:left;">
       <center>
         <br>
