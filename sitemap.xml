@@ -6,13 +6,11 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <!-- back to home pages -->
   <loc>https://herisetiawan.vercel.app/</loc>
   <changefreq>daily</changefreq>
   <priority>0.7</priority>
 </url>
 <url>
-  <!-- Published on 2022 -->
   <loc>https://herisetiawan.vercel.app/blog/simple-template-website.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.7</priority>
