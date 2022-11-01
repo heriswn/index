@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /yandex_9d74af671401b69e.html
 
 Sitemap: http://herisetiawan.vercel.app/sitemap.xml
