@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: http://herisetiawan.vercel.app/sitemap.xml
