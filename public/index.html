@@ -62,8 +62,17 @@
 
       a:link,
       a:visited,
-      a:hover {
+      a {
+        font-weight: 550;
         color: #e9e61fff;
+        text-decoration: underline 2px;
+        text-decoration-color: transparent;
+      }
+
+      a:hover {
+        text-decoration:underline 2px;
+        text-decoration-color: #e9e61fff;
+        transition: 0.15s ease-in;
       }
 
       ::-webkit-scrollbar {
@@ -87,6 +96,15 @@
         fill: var(--logo-clr);
         display: flex;
         justify-content: center;
+        /* transition tips */
+        -webkit-transition: fill 2s ease-out;
+        -moz-transition: fill 2s ease-out;
+        -o-transition: fill 2s ease-out;
+        transition: fill 2s ease-out;
+        -webkit-transition: border-color 2s ease-out;
+        -moz-transition: border-color 2s ease-out;
+        -o-transition: border-color 2s ease-out;
+        transition: border-color 2s ease-out;
       }
 
       .logoBtn:hover {
@@ -101,6 +119,21 @@
         --bg-footer: #f1f5f9;
         --border-s: #e9e61fff;
         --logo-clr: #27272a;
+      }
+
+      a:link,
+      a:visited,
+      a {
+        font-weight: 550;
+        color: #663298;
+        text-decoration: underline 2px;
+        text-decoration-color: transparent;
+      }
+
+      a:hover {
+        text-decoration:underline 2px;
+        text-decoration-color: #663298;
+        transition: 0.15s ease-in;
       }
 
       ::-webkit-scrollbar {
@@ -121,14 +154,23 @@
         border-style: solid;
         border-radius: 9999px;
         border-color: var(--logo-clr);
-        fill: var(--logo-clr);
+        fill: var(--logo-clr);;
         display: flex;
         justify-content: center;
+        /* transition tips */
+        -webkit-transition: fill 2s ease-out;
+        -moz-transition: fill 2s ease-out;
+        -o-transition: fill 2s ease-out;
+        transition: fill 2s ease-out;
+        -webkit-transition: border-color 2s ease-out;
+        -moz-transition: border-color 2s ease-out;
+        -o-transition: border-color 2s ease-out;
+        transition: border-color 2s ease-out;
       }
 
       .logoBtn:hover {
-        border-color: #0055F2;
-        fill: #0055F2;
+        border-color: #663298;
+        fill: #663298;
       }
     }
 
@@ -157,7 +199,7 @@
   <aside style="background-color: var(--logo-clr);">
     <div style="text-align: center;padding-top: 15px;padding-bottom: 15px;">
       <span class="font-custom" style="color: var(--bg-header);font-family: 'Segoe UI';">🎉 <b>This Template</b> is available on <b>GitHub</b> 🎉
-        <a href="https://github.com/heriswn/index" target="_blank" rel="noopener noreferrer" style="color: var(--bg-header);"><b>Get It NOW</b></a></span>
+        <a href="https://github.com/heriswn/index" target="_blank" rel="noopener noreferrer" style="color: var(--logo-clr);background-color: var(--bg-header);border-radius: 4px;padding: 4px 8px;">Get It NOW</a></span>
     </div>
   </aside>
   <header id="top"
@@ -185,7 +227,7 @@
   <main style="display: flex;justify-content: center;margin-bottom: 20px;">
     <article style='width: 400px;padding: 8px; font-family:Arial; font-size: 13px;'>
       <h1>About Heri Setiawan</h1>
-      <section style='text-align: justify;'>
+      <section style='text-align: left;'>
         <h2>Experience</h2>
         <p>I've experience in Marketing Analyst and Marketing Planner with a demonstrated history of working in the
         Indonesian free-to-air television network (<a href="https://www.gtv.id/" target="_blank" rel="noopener noreferrer"
@@ -196,7 +238,7 @@
           href="https://matematika.unpad.ac.id/mathematics/" target="_blank" rel="noopener noreferrer">mathematics
           department</a>.</p>
       </section>
-      <section style='text-align: justify;'>
+      <section style='text-align: left;'>
         <h2>The Importance of Privacy</h2>
         <p>Online privacy is important because it helps protect personal privacy, prevent cybercrime, defend freedom of expression,
         and safeguard trust. For example, if we do not protect our online privacy, others can easily access our personal
@@ -221,7 +263,7 @@
             this template in here</a> or if any question, feel free to <a href="mailto:hdmsypmfg@duck.com"
             title="Email to Heri Setiawan">contact me</a>.</p>
       </section>
-      <section style='text-align:justify;'>
+      <section style='text-align: left;'>
         <h2>Others About Heri Setiawan</h2>
         <h3><a href="https://heriswn.github.io" target="_blank" rel="noopener noreferrer" title="Read all my opinion in here">My
           Opinion</a></h3>
@@ -235,7 +277,7 @@
               Sorry to say, South Korea isn't okay!!!</a>
         </ul>
       </section>
-      <section style='text-align:justify;'>
+      <section style='text-align: left;'>
         <h3>What's book i've read?</h3>
         <p>If you need reading book recommendations, I highly recommend checking out the following books.</p>
         <ul>
@@ -246,7 +288,7 @@
           Quranreview</i>
         </ul>
       </section>
-      <section style='text-align:justify;'>
+      <section style='text-align: left;'>
         <h3>What's podcast i've listen?</h3>
         <p>If you need podcast recommendations to listen to during your free time, I highly recommend listening to the following
         podcasts.</p>
@@ -257,7 +299,7 @@
               rel="noopener noreferrer">Cahaya Rasa</a>
         </ul>
       </section>
-      <section style='text-align:justify;'>
+      <section style='text-align: left;'>
         <h3>!Affiliation</h3>
         <p>Here are some useful software or applications, I highly recommend trying them. I've been using it for the last few
         months and have been very impressed with its features. Apart from that, the interface is easy to use and very
@@ -266,35 +308,35 @@
         <ul>
           <li><a href="https://nextdns.io/?from=zjtr6yup" target="_blank" rel="noopener noreferrer"
               title="Sign up in here!">
-              <b>NextDNS</b></a> <i>[Privacy, Service, Free]</i> protects you from all kinds of security threats, blocks ads and trackers on websites and in apps
+              NextDNS</a> <i>[Privacy, Service, Free]</i> protects you from all kinds of security threats, blocks ads and trackers on websites and in apps
             and provides a safe and supervised Internet for kids — on all devices and on all networks.</li>
-          <li><a href="https://bitwarden.com/" target="_blank" rel="noopener noreferrer"><b>Bitwarden</b></a> <i>[Privacy, Extensions, Free]</i> Move fast and securely with the password manager trusted by millions.</li>
-          <li><a href="https://adguard.com/en/welcome.html" target="_blank" rel="noopener noreferrer"><b>AdGuard</b></a> <i>[Privacy, Extensions, Free]</i> Blocks all kinds of ads, Removes annoying web elements, Saves traffic and speeds up page loading, Works for browsers and apps, Maintains site functionality and appearance.</li>
-          <li><a href="https://www.producthunt.com/products/slid" target="_blank" rel="noopener noreferrer"><b>Slid</b></a> <i>[Educations, Extensions, Free]</i> is the smartest note-taking Chrome extension for online learning.
+          <li><a href="https://bitwarden.com/" target="_blank" rel="noopener noreferrer">Bitwarden</a> <i>[Privacy, Extensions, Free]</i> Move fast and securely with the password manager trusted by millions.</li>
+          <li><a href="https://adguard.com/en/welcome.html" target="_blank" rel="noopener noreferrer">AdGuard</a> <i>[Privacy, Extensions, Free]</i> Blocks all kinds of ads, Removes annoying web elements, Saves traffic and speeds up page loading, Works for browsers and apps, Maintains site functionality and appearance.</li>
+          <li><a href="https://www.producthunt.com/products/slid" target="_blank" rel="noopener noreferrer">Slid</a> <i>[Educations, Extensions, Free]</i> is the smartest note-taking Chrome extension for online learning.
           Take notes with captures from videos, build your own knowledge database, share the knowledge anywhere you want.</li>
-          <li><a href="https://chrome.google.com/webstore/detail/subtitles-for-youtube/oanhbddbfkjaphdibnebkklpplclomal?hl=en-US" target="_blank" rel="noopener noreferrer"><b>Subtitles For YouTube</b></a>
+          <li><a href="https://chrome.google.com/webstore/detail/subtitles-for-youtube/oanhbddbfkjaphdibnebkklpplclomal?hl=en-US" target="_blank" rel="noopener noreferrer">Subtitles For YouTube</a>
             <i>[Tools, Extensions, Free]</i> extension to add subtitles available to user to any YouTube video.</li>
           <li><a href="https://wawplus.com/en/"
-              target="_blank" rel="noopener noreferrer"><b>WA Web Plus for WhatsApp™</b></a>
+              target="_blank" rel="noopener noreferrer">WA Web Plus for WhatsApp™</a>
             <i>[Privacy, Extensions, Free]</i> Add more tools and options for WhatsApp Web for more privacy and reliability.
           </li>
-          <li><a href="https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg" target="_blank" rel="noopener noreferrer"><b>ColorPick Eyedropper</b></a>
+          <li><a href="https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg" target="_blank" rel="noopener noreferrer">ColorPick Eyedropper</a>
             <i>[Developer, Extensions, Free]</i> A zoomed eyedropper & color chooser tool that allows you to select color values from webpages and more.
           </li>
           <li><a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm"
-              target="_blank" rel="noopener noreferrer"><b>WhatFont</b></a>
+              target="_blank" rel="noopener noreferrer">WhatFont</a>
             <i>[Developer, Extensions, Free]</i> The easiest way to identify fonts on web pages.
           </li>
           <li><a href="https://sites.google.com/view/adblock-for-yt/index?pli=1" target="_blank"
-              rel="noopener noreferrer"><b>Adblock for Youtube™</b></a>
+              rel="noopener noreferrer">Adblock for Youtube™</a>
             <i>[Tools, Extensions, Free]</i> Remove ads from Youtube™.
           </li>
           <li><a href="https://duckduckgo.com/app?" target="_blank"
-              rel="noopener noreferrer"><b>DuckDuckGo</b></a>
+              rel="noopener noreferrer">DuckDuckGo</a>
             <i>[Privacy, Apps, Extensions, Free]</i> On DuckDuckGo, there are no search histories and no user profiling. This means your search activity remains private, and
             you'll see fewer creepy ads following you around online.
           </li>
-          <li><a href="https://brave.com/" target="_blank" rel="noopener noreferrer"><b>Brave</b></a>
+          <li><a href="https://brave.com/" target="_blank" rel="noopener noreferrer">Brave</a>
             <i>[Privacy, Browser, Free]</i> The best privacy online
             Browse privately. Search privately. And ditch Big Tech.
           </li>
@@ -394,7 +436,7 @@
         </p>
         <p
           style='font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;font-weight: 400;font-size: 12px;text-align: center;margin-top: 5px;'>
-          © Heri Setiawan, <a href="https://www.producthunt.com/products/awesome-personal-site-template" target="_blank"
+          2023 © Heri Setiawan, <a href="https://www.producthunt.com/products/awesome-personal-site-template" target="_blank"
             rel="noopener noreferrer">All rights reserved</a>.
         </p>
       </div>
