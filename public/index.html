@@ -288,21 +288,6 @@
       </div>
     </div>
   </footer>
-  <script>
-    var BASE_URL = '<?= base_url() ?>';
-    document.addEventListener('DOMContentLoaded', init, false);
-
-    function init() {
-      if ('serviceWorker' in navigator && navigator.onLine) {
-        navigator.serviceWorker.register(BASE_URL + 'serviceWorker.js')
-          .then((reg) => {
-            console.log('Registration success', reg);
-          }, (err) => {
-            console.error('Registration unsuccess', err);
-          });
-      }
-    }
-  </script>
 </body>
 <script src="src/js/script.js"></script>
 </html>
