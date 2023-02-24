@@ -3,7 +3,7 @@ const CACHE_NAME = "pwa";
 
 /* Add relative URL of all the static content you want to store in
  * cache storage (this will help us use our app offline)*/
-let resourcesToCache = ["assets/js/app.js", "src/css/style.css"];
+let resourcesToCache = ["src/js/script.js", "src/css/style.css"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
