@@ -3,8 +3,7 @@
   "short_name": "Heriswn",
   "start_url": "/",
   "display": "fullscreen",
-  "orientation": "portrait-primary",
-  "theme_color": "black",
+  "theme_color": "#000",
   "background_color": "#111",
   "description": "A personal web app.",
   "icons": [{
@@ -29,6 +28,10 @@
     "type": "image/png"
   }, {
     "src": "apple-icon-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "ms-icon-144x144.png",
     "sizes": "144x144",
     "type": "image/png"
   }, {
