@@ -12,8 +12,6 @@ const assets = [
   "/favicon/favicon-96x96.png",
   "/favicon/favicon-120x120.png",
   "/favicon/favicon-512x512.png",
-  "/favicon/ms-icon-144x144.png",
-  "/static/music/f1.mp3",
 ];
 
 self.addEventListener("install", (installEvent) => {
