@@ -1,15 +1,21 @@
 {
-  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
   "name": "Heri Setiawan",
   "short_name": "Heriswn",
   "start_url": "https://herisetiawan.vercel.app/",
-  "scope": "/",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait-primary",
   "theme_color": "black",
   "background_color": "#111",
   "description": "A personal web app.",
   "icons": [{
+    "src": "favicon-16x16.png",
+    "sizes": "16x16",
+    "type": "image/png"
+  },{
+    "src": "favicon-32x32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  },{
     "src": "apple-icon-72x72.png",
     "sizes": "72x72",
     "type": "image/png"
