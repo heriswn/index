@@ -12,6 +12,7 @@ const assets = [
   "/favicon/favicon-96x96.png",
   "/favicon/favicon-120x120.png",
   "/favicon/favicon-512x512.png",
+  "/static/heriswn.jpg",
 ];
 
 self.addEventListener("install", (installEvent) => {

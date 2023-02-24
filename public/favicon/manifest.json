@@ -46,5 +46,10 @@
     "sizes": "512x512",
     "type": "image/png",
     "purpose": "maskable"
+  }, {
+    "src": "/static/heriswn.jpg",
+    "sizes": "1080x1080",
+    "type": "image/jpg",
+    "purpose": "any"
   }]
 }
