@@ -46,6 +46,17 @@
         <a href="https://github.com/heriswn/index" target="_blank" rel="noopener noreferrer" style="color: var(--logo-clr);background-color: var(--bg-header);border-radius: 4px;padding: 4px 8px;">Get It NOW</a></span>
     </div>
   </aside>
+  <button id="myBtn">Open Modal</button>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <span>Alert! Audio will play <span style="font-size: 15px;font-weight: 400;">Check your phone volume</span></span>
+      </div>
+    </div>
+  </div>
   <header id="top"
     style='width: 100%; display: flex;justify-content: center;background-color: var(--bg-header);border-bottom: 1.5px solid var(--border-s);'>
     <div class="screenResponsive" style="margin-top: 25px;margin-bottom: 25px;padding:8px;">
@@ -292,31 +303,25 @@
     <source src="static/music/f1.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <div style="text-align: center;" hidden>
-    <button onscroll="playAudio()" type="button">Play Audio Scroll</button>
-    <button onscroll="pauseAudio()" type="button">Pause Audio Scroll</button>
-  </div>
   <script>
-    window.addEventListener("scroll", (event) => {
-      let scroll = this.scrollY;
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-      if (scroll >= 1) {
-        playAudio();
-        console.log("play");
-      } else {
-        pauseAudio();
-        console.log("mati");
-      }
-    });
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
 
-    var x = document.getElementById("myAudio");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-    function playAudio() {
-      x.play();
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
     }
 
-    function pauseAudio() {
-      x.pause();
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+      myAudio.play();
     }
   </script>
 </body>
