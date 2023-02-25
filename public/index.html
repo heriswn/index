@@ -45,7 +45,6 @@
       <span class="font-custom" style="color: var(--bg-header);font-family: 'Segoe UI';">🎉 <b>This Template</b> is available on <b>GitHub</b> 🎉
         <a href="https://github.com/heriswn/index" target="_blank" rel="noopener noreferrer" style="color: var(--logo-clr);background-color: var(--bg-header);border-radius: 4px;padding: 4px 8px;">Get It NOW</a></span>
     </div>
-    <audio src="https://github.com/heriswn/index/raw/main/public/static/music/f1.mp3" autoplay></audio>
   </aside>
   <header id="top"
     style='width: 100%; display: flex;justify-content: center;background-color: var(--bg-header);border-bottom: 1.5px solid var(--border-s);'>
@@ -288,6 +287,18 @@
       </div>
     </div>
   </footer>
+  <script>
+    var source = "static/music/f1.mp3"
+    var audio = document.createElement("audio");
+    //
+    audio.autoplay = true;
+    //
+    audio.load()
+    audio.addEventListener("load", function () {
+      audio.play();
+    }, true);
+    audio.src = source;
+  </script>
 </body>
 <script src="src/js/script.js"></script>
 </html>
