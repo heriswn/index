@@ -46,14 +46,16 @@
         <a href="https://github.com/heriswn/index" target="_blank" rel="noopener noreferrer" style="color: var(--logo-clr);background-color: var(--bg-header);border-radius: 4px;padding: 4px 8px;">Get It NOW</a></span>
     </div>
   </aside>
-  <button id="myBtn">Open Modal</button>
+  <button hidden id="myBtn"
+    style="color: var(--logo-clr);background-color: var(--bg-header);border-radius: 4px;padding: 4px 8px;">Open
+    Modal</button>
   <!-- The Modal -->
   <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
       <div class="modal-header">
-        <span class="close">&times;</span>
-        <span>Alert! Audio will play <span style="font-size: 15px;font-weight: 400;">Check your phone volume</span></span>
+        <span class="close"><b>&times;</b></span>
+        <span class="font-custom" style="color: var(--bg-header);font-family: 'Segoe UI';"><b>Alert! Audio will play</b> Check your phone volume</span>
       </div>
     </div>
   </div>
@@ -323,6 +325,10 @@
       modal.style.display = "none";
       myAudio.play();
     }
+
+    window.addEventListener("load", (event) => {
+      document.getElementById("myBtn").click();
+    });
   </script>
 </body>
 <script src="src/js/script.js"></script>
