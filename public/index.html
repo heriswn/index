@@ -46,19 +46,6 @@
         <a href="https://github.com/heriswn/index" target="_blank" rel="noopener noreferrer" style="color: var(--logo-clr);background-color: var(--bg-header);border-radius: 4px;padding: 4px 8px;">Get It NOW</a></span>
     </div>
   </aside>
-  <button hidden id="myBtn"
-    style="color: var(--logo-clr);background-color: var(--bg-header);border-radius: 4px;padding: 4px 8px;">Open
-    Modal</button>
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <div class="modal-header">
-        <span class="close"><b>&times;</b></span>
-        <span class="font-custom" style="color: var(--bg-header);font-family: 'Segoe UI';"><b>Alert! Audio will play</b> Check your phone volume</span>
-      </div>
-    </div>
-  </div>
   <header id="top"
     style='width: 100%; display: flex;justify-content: center;background-color: var(--bg-header);border-bottom: 1.5px solid var(--border-s);'>
     <div class="screenResponsive" style="margin-top: 25px;margin-bottom: 25px;padding:8px;">
@@ -300,36 +287,6 @@
       </div>
     </div>
   </footer>
-  <audio id="myAudio" hidden controls>
-    <source src="static/music/f1.ogg" type="audio/ogg">
-    <source src="static/music/f1.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-      myAudio.play();
-    }
-
-    window.addEventListener("load", (event) => {
-      document.getElementById("myBtn").click();
-    });
-  </script>
 </body>
 <script src="src/js/script.js"></script>
 </html>
