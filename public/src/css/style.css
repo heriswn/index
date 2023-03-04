@@ -142,6 +142,12 @@
     width: 600px;
 }
 
+.giscus {
+    width: 600px;
+    padding: 8px;
+    margin: auto;
+}
+
 .headerset {
     margin-left: 100px;
 }
@@ -150,6 +156,11 @@
     .screenResponsive {
     display: block;
     text-align: center;
+    }
+
+    .giscus {
+        width: auto;
+        padding: 8px;
     }
 
     .headerset {
