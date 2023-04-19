@@ -8,40 +8,40 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-    --bg-header: #27272a;
-    --bg-footer: #27272a;
-    --border-s: #e9e61fff;
-    --logo-clr: #f1f5f9;
+    --bg-home: #1A120B;
+    --primary: #3C2A21;
+    --secondary: #E5E5CB;
+    --tertiary: #D5CEA3;
     }
 
     body {
-    background-color: #111;
-    color: #EEE;
+    background-color: var(--bg-home);
+    color: var(--secondary);
     }
 
     a:link,
     a:visited,
     a {
     font-weight: 550;
-    color: #e9e61fff;
+    color: var(--tertiary);
     text-decoration: underline 2px;
     text-decoration-color: transparent;
     }
 
     a:hover {
     text-decoration:underline 2px;
-    text-decoration-color: #e9e61fff;
+    text-decoration-color: var(--tertiary);;
     transition: 0.5s ease-in;
     }
 
     ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-    background: #f0f1f0;
+    background: var(--tertiary);
     }
 
     ::-webkit-scrollbar-thumb {
-    background: #BBB;
+    background: var(--secondary);
     border-radius: 0;
     }
 
@@ -51,8 +51,8 @@
     margin: 5px;
     border-style: solid;
     border-radius: 9999px;
-    border-color: var(--logo-clr);
-    fill: var(--logo-clr);
+    border-color: var(--secondary);
+    fill: var(--secondary);
     display: flex;
     justify-content: center;
     /* transition tips */
@@ -67,42 +67,47 @@
     }
 
     .logoBtn:hover {
-    border-color: var(--border-s);
-    fill: var(--border-s);
+    border-color: var(--tertiary);
+    fill: var(--tertiary);
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-    --bg-header: #f1f5f9;
-    --bg-footer: #f1f5f9;
-    --border-s: #e9e61fff;
-    --logo-clr: #27272a;
+    --bg-home: #F9E4D4;
+    --primary: #D67D3E;
+    --secondary: #9C0F48;
+    --tertiary: #470D21;
+    }
+
+    body {
+    background-color: var(--bg-home);
+    color: var(--secondary);
     }
 
     a:link,
     a:visited,
     a {
     font-weight: 550;
-    color: #663298;
+    color: var(--tertiary);;
     text-decoration: underline 2px;
     text-decoration-color: transparent;
     }
 
     a:hover {
     text-decoration:underline 2px;
-    text-decoration-color: #663298;
+    text-decoration-color: var(--tertiary);;
     transition: 0.5s ease-in;
     }
 
     ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-        background: #f0f1f0;
+    width: 8px;
+    height: 8px;
+    background: var(--tertiary);
     }
 
     ::-webkit-scrollbar-thumb {
-    background: #BBB;
+    background: var(--secondary);
     border-radius: 0;
     }
 
@@ -112,8 +117,8 @@
     margin: 5px;
     border-style: solid;
     border-radius: 9999px;
-    border-color: var(--logo-clr);
-    fill: var(--logo-clr);;
+    border-color: var(--secondary);
+    fill: var(--secondary);;
     display: flex;
     justify-content: center;
     /* transition tips */
@@ -128,8 +133,8 @@
     }
 
     .logoBtn:hover {
-    border-color: #663298;
-    fill: #663298;
+    border-color: var(--tertiary);
+    fill: var(--tertiary);
     }
 }
 
