@@ -6,112 +6,50 @@
     scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-    --bg-home: #1A120B;
-    --primary: #3C2A21;
-    --secondary: #E5E5CB;
-    --tertiary: #D5CEA3;
-    }
-
-    body {
-    background-color: var(--bg-home);
-    color: var(--secondary);
-    }
-
-    a:link,
-    a:visited,
-    a {
-    font-weight: 550;
-    color: var(--tertiary);
-    text-decoration: underline 2px;
-    text-decoration-color: transparent;
-    }
-
-    a:hover {
-    text-decoration:underline 2px;
-    text-decoration-color: var(--tertiary);;
-    transition: 0.5s ease-in;
-    }
-
-    ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    background: var(--tertiary);
-    }
-
-    ::-webkit-scrollbar-thumb {
-    background: var(--secondary);
-    border-radius: 0;
-    }
-
-    .logoBtn {
-    width: 25px;
-    height: 24px;
-    margin: 5px;
-    border-style: solid;
-    border-radius: 9999px;
-    border-color: var(--secondary);
-    fill: var(--secondary);
-    display: flex;
-    justify-content: center;
-    /* transition tips */
-    -webkit-transition: fill 0.5s ease-out;
-    -moz-transition: fill 0.5s ease-out;
-    -o-transition: fill 0.5s ease-out;
-    transition: fill 0.5s ease-out;
-    -webkit-transition: border-color 0.5s ease-out;
-    -moz-transition: border-color 0.5s ease-out;
-    -o-transition: border-color 0.5s ease-out;
-    transition: border-color 0.5s ease-out;
-    }
-
-    .logoBtn:hover {
-    border-color: var(--tertiary);
-    fill: var(--tertiary);
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
+body {
     --bg-home: #F9E4D4;
     --primary: #D67D3E;
     --secondary: #9C0F48;
     --tertiary: #470D21;
-    }
 
-    body {
     background-color: var(--bg-home);
     color: var(--secondary);
-    }
+}
 
-    a:link,
-    a:visited,
-    a {
+.dark {
+    --bg-home: #1A120B;
+    --primary: #3C2A21;
+    --secondary: #E5E5CB;
+    --tertiary: #D5CEA3;
+}
+
+a:link,
+a:visited,
+a {
     font-weight: 550;
     color: var(--tertiary);;
     text-decoration: underline 2px;
     text-decoration-color: transparent;
-    }
+}
 
-    a:hover {
+a:hover {
     text-decoration:underline 2px;
     text-decoration-color: var(--tertiary);;
     transition: 0.5s ease-in;
-    }
+}
 
-    ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px;
     height: 8px;
     background: var(--tertiary);
-    }
+}
 
-    ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--secondary);
     border-radius: 0;
-    }
+}
 
-    .logoBtn {
+.logoBtn {
     width: 25px;
     height: 24px;
     margin: 5px;
@@ -130,17 +68,73 @@
     -moz-transition: border-color 0.5s ease-out;
     -o-transition: border-color 0.5s ease-out;
     transition: border-color 0.5s ease-out;
-    }
+}
 
-    .logoBtn:hover {
+.logoBtn:hover {
     border-color: var(--tertiary);
     fill: var(--tertiary);
-    }
 }
 
-.font-custom {
-    font-size: 18px;
+/* ------------------ */
+.glow-on-hover {
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: var(--primary);
+    background: var(--tertiary);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--tertiary);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/* ------------------ */
 
 .screenResponsive {
     display: flex;
@@ -157,10 +151,15 @@
     margin-left: 100px;
 }
 
+.font-custom {
+    font-family: 'Segoe UI';
+    font-size: 15px;
+}
+
 @media screen and (max-width: 480px) {
     .screenResponsive {
-    display: block;
-    text-align: center;
+        display: block;
+        text-align: center;
     }
 
     .giscus {
@@ -169,10 +168,10 @@
     }
 
     .headerset {
-    margin-left: 0;
+        margin-left: 0;
     }
 
     .font-custom {
-    font-size: 12px;
+        font-size: 12px;
     }
 }
