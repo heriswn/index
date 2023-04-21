@@ -7,10 +7,10 @@
 }
 
 body {
-    --bg-home: #F9E4D4;
-    --primary: #D67D3E;
-    --secondary: #9C0F48;
-    --tertiary: #470D21;
+    --bg-home: #FEFBE9;
+    --primary: #E1EEDD;
+    --secondary: #F0A04B;
+    --tertiary: #183A1D;
 
     background-color: var(--bg-home);
     color: var(--secondary);
