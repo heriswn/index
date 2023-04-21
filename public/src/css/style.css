@@ -27,7 +27,7 @@ a:link,
 a:visited,
 a {
     font-weight: 550;
-    color: var(--tertiary);;
+    color: var(--tertiary);
     text-decoration: underline 2px;
     text-decoration-color: transparent;
 }
@@ -142,9 +142,12 @@ a:hover {
 }
 
 .giscus {
+    background: var(--primary);
+    border-radius: 8px;
     width: 600px;
     padding: 8px;
     margin: auto;
+    margin-bottom: 8px;
 }
 
 .headerset {
