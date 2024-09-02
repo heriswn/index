@@ -81,7 +81,7 @@
             </div>
         </div>
     </header>
-    <!-- LIST POST -->
+    <!-- THE POST -->
     <main style="display: flex;justify-content: center;margin-bottom: 20px;">
         <article style='width: 600px;padding: 8px; font-family:Arial; font-size: 13px;'>
             <h1>The Blog's</h1>
@@ -100,6 +100,18 @@
                         target="_blank" rel="noopener noreferrer">mathematics
                         department</a>.</p>
             </section>
+            <style>
+                .pdfobject-container {
+                    height: 500px;
+                    border: 1px solid #ccc;
+                }
+            </style>
+            <div id="my-pdf"></div>
+            <script src="https://unpkg.com/pdfobject"></script>
+            <script>PDFObject.embed("/public/blog/static/file.pdf", "#my-pdf");</script>
+            <object data="/public/blog/static/file.pdf" type="application/pdf" width="100%" height="100%">
+                <p>Alternative text - include a link <a href="myfile.pdf">to the PDF!</a></p>
+            </object>
 
             <!-- X -->
             <div style='text-align:left;margin-bottom: 10px;'>
